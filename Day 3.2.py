@@ -18,9 +18,7 @@ def get_groups(lines):
 def iterate_over_groups(groups):
     result = 0
     for group in groups:
-        print(group)
         item = get_duplicated_item(group)
-        print(item)
         result += get_item_priority(item)
     return result
 
