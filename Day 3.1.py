@@ -1,6 +1,4 @@
-def get_input():
-    with open("input documents/input day 3.1.txt", "r") as file:
-        return file.readlines()
+from Input import Input
 
 
 def iterate_over_lines(lines):
@@ -59,4 +57,4 @@ priority = {
 
 
 if __name__ == "__main__":
-    print(iterate_over_lines(get_input()))
+    print(iterate_over_lines(Input.get_input_of_file("input documents/input day 3.1.txt")))

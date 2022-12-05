@@ -1,6 +1,4 @@
-def get_lines():
-    with open("input documents/input day 2.1.txt", "r") as file:
-        return file.readlines()
+from Input import Input
 
 
 def iterate_over_games(lines):
@@ -40,4 +38,4 @@ points = {
 
 
 if __name__ == "__main__":
-    print(iterate_over_games(get_lines()))
+    print(iterate_over_games(Input.get_input_of_file("input documents/input day 2.1.txt")))

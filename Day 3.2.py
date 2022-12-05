@@ -1,6 +1,4 @@
-def get_input():
-    with open("input documents/input day 3.1.txt", "r") as file:
-        return file.readlines()
+from Input import Input
 
 
 def get_groups(lines):
@@ -66,4 +64,4 @@ priority = {
 
 
 if __name__ == "__main__":
-    print(iterate_over_groups(get_groups(get_input())))
+    print(iterate_over_groups(get_groups(Input.get_input_of_file("input documents/input day 3.1.txt"))))

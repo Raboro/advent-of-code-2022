@@ -1,11 +1,10 @@
-with open("input documents/input day 1.1.txt", "r") as file:
-    lines = file.readlines()
+from Input import Input
 
 elves = []
 
 elf = 0
 highest_value = [0, 0]
-for line in lines:
+for line in Input.get_input_of_file("input documents/input day 1.1.txt"):
     if line == "\n":
         if highest_value[0] < elf:
             highest_value[0] = elf
